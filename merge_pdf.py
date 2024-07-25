@@ -2,7 +2,6 @@
 
 import argparse
 import os
-import sys
 from PyPDF2 import PdfReader, PdfWriter
 
 parser = argparse.ArgumentParser(prog = "MergePDF")
