@@ -43,6 +43,9 @@ def merge_pdfs_with_bookmark(pdf_files: list, output_file: str, bookmarks = True
             for b in old_bookmarks.keys():
                 pdf_writer.add_bookmark(b, old_bookmarks[b] + len(pdf_writer.pages) - len(pdf_reader.pages), parent = new_bookmark)
 
+    if output_file in pdf_files:
+        os.remove(output_file)
+
     with open(output_file, 'wb') as out_pdf:
         print("Writing output")
         pdf_writer.write(out_pdf)
