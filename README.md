@@ -1,4 +1,4 @@
 # EasyPDFMerger
-An script to merge pdf easily
+A script to merge pdf easily
 
 # Next Features
